@@ -4,14 +4,15 @@ import Users from "./pages/Users";
 import Products from "./pages/Products";
 import Home from "./pages/Home";
 import Content from "./pages/Content";
-import Navbar from "./components/Header/Navbar/Nav";
 import Footer from "./pages/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   const Layout = () => {
     return (
       <div>
-        <Navbar />
+        <Header />
+
         <div>
           <div>
             <Outlet />
