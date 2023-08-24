@@ -4,7 +4,7 @@ import Users from "./pages/Users";
 import Products from "./pages/Products";
 import Home from "./pages/Home";
 import Content from "./pages/Content";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 function App() {

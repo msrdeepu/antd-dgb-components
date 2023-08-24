@@ -1,49 +1,37 @@
-import { Col, Row, Typography } from "antd";
-const { Title } = Typography;
+import React from "react";
+//css
+import "./topbar.css";
 
-import { FaMapMarkerAlt } from "react-icons/fa";
-
+//icons
 import {
   BsFacebook,
-  // BsInstagram,
   BsTwitter,
   BsLinkedin,
+  BsInstagram,
   BsYoutube,
 } from "react-icons/bs";
 
-let styleItem = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-};
-
-let styleSocialIcon = {
-  margin: "3px",
-  padding: "1px",
-};
-
 const Topbar = () => {
   return (
-    <Row gutter={[8, 4]} className="p-2" height={2}>
-      <Col xs={12} md={16} offset={2}>
-        <Title level={4}>Leading Digital Transformation - DGBITS</Title>
-      </Col>
-      <Col xs={12} md={3}>
-        <div style={styleItem}>
-          <FaMapMarkerAlt />
-          <h2> Tirupati, AP, INDIA</h2>
+    <>
+      <div className="flex flex-row flex-wrap justify-around shadow-sm topbar-container">
+        <div>
+          <h2 className="hidden md:block">
+            Leading Digital Transformation - DGBITS
+          </h2>
+          <h2 className="sm:block md:hidden">DGBITS</h2>
         </div>
-      </Col>
-      <Col xs={12} md={3}>
-        <div style={styleItem}>
-          <BsFacebook color="dodgerblue" style={styleSocialIcon} />
-          {/* <BsInstagram color="pink" style={styleSocialIcon} /> */}
-          <BsTwitter color="skyblue" style={styleSocialIcon} />
-          <BsLinkedin color="gray" style={styleSocialIcon} />
-          <BsYoutube color="red" style={styleSocialIcon} />
+        <div>
+          <h2>Tirupati, AP, INDIA</h2>
         </div>
-      </Col>
-    </Row>
+        <div className="flex flex-row justify-center align-middle ">
+          <BsFacebook color="dodgerblue" style={{ margin: "5px" }} />
+          <BsYoutube color="red" style={{ margin: "5px" }} />
+          <BsTwitter color="skyblue" style={{ margin: "5px" }} />
+          <BsLinkedin color="orange" style={{ margin: "5px" }} />
+        </div>
+      </div>
+    </>
   );
 };
 
