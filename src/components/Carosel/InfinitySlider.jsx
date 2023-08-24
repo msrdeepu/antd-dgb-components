@@ -1,5 +1,4 @@
-import React from "react";
-
+import "./infyslider.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,9 +94,22 @@ const CaroselData = [
 ];
 
 function CardItem(card) {
+  return (
+    <Card
+      className="text-center card-item-container"
+      style={{
+        width: 300,
+      }}
+      cover={<img alt={card.title} src={card.src} />}
+    >
+      <Meta title={card.title} description={card.tech} />
+    </Card>
+  );
+}
+const InfinitySlider = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -130,22 +142,12 @@ function CardItem(card) {
     ],
   };
   return (
-    <Slider {...settings}>
-      <Card
-        className="text-center"
-        style={{
-          width: 300,
-          margin: "5px",
-        }}
-        cover={<img alt={card.title} src={card.src} />}
-      >
-        <Meta title={card.title} description={card.tech} />
-      </Card>
-    </Slider>
+    <>
+      <Slider className="p-4" {...settings}>
+        {CaroselData.map(CardItem)}{" "}
+      </Slider>
+    </>
   );
-}
-const InfinitySlider = () => {
-  return <>{CaroselData.map(CardItem)}</>;
 };
 
 export default InfinitySlider;
