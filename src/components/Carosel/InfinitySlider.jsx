@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { Typography } from "antd";
+const { Title, Text } = Typography;
 import { Card } from "antd";
 const { Meta } = Card;
 
@@ -91,29 +93,38 @@ const CaroselData = [
     title: "Loyal Links Matrimony",
     tech: "Laravel, Mysql, Material-UI, PHP",
   },
+  {
+    id: "15",
+    src: "https://dgbits.in/images/ruby-thumb.png",
+    title: "Ruby Infra AP",
+    tech: "HTML5, CSS3, Bootstrap 5, Laravel8",
+  },
 ];
 
 function CardItem(card) {
   return (
-    <Card
-      className="text-center card-item-container"
-      style={{
-        width: 300,
-      }}
-      cover={<img alt={card.title} src={card.src} />}
-    >
-      <Meta title={card.title} description={card.tech} />
-    </Card>
+    <div>
+      <Card
+        className="text-center card-item-container"
+        style={{
+          width: 300,
+        }}
+        cover={<img alt={card.title} src={card.src} />}
+      >
+        <Meta title={card.title} description={card.tech} />
+      </Card>
+    </div>
   );
 }
 const InfinitySlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -143,11 +154,15 @@ const InfinitySlider = () => {
   };
   return (
     <>
-      <Slider className="p-4" {...settings}>
-        {CaroselData.map(CardItem)}{" "}
-      </Slider>
+      <div style={{ overflow: "hidden", padding: "5px" }}>
+        <Title className="text-center" level={2}>
+          Our Latest Projects
+        </Title>
+        <Slider className="p-2" {...settings}>
+          {CaroselData.map(CardItem)}
+        </Slider>
+      </div>
     </>
   );
 };
-
 export default InfinitySlider;

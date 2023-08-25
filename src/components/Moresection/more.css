@@ -1,0 +1,11 @@
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://dgbits.in/images/c2a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

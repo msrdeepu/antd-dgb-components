@@ -1,8 +1,6 @@
 import Topbar from "./Topbar/Topbar";
 import Secondbar from "./SecondBar/Secondbar";
-import Navbar from "./Navbar/Nav";
-
-import { Divider } from "antd";
+import Megamenu from "./Megamenu/Megamenu";
 
 const Header = () => {
   return (
@@ -11,7 +9,7 @@ const Header = () => {
       <hr />
       <Secondbar />
       <hr />
-      <Navbar />
+      <Megamenu />
     </>
   );
 };
