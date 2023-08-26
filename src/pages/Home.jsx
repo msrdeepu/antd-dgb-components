@@ -8,7 +8,6 @@ import CardDesign from "../components/Cards/CardDesign";
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
       <HeroCarosel />
       <InfinitySlider />
       <Moreabout />

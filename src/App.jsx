@@ -4,8 +4,8 @@ import Users from "./pages/Users";
 import Products from "./pages/Products";
 import Home from "./pages/Home";
 import Content from "./pages/Content";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Megafooter from "./components/Megafooter/Megafooter";
 
 function App() {
   const Layout = () => {
@@ -18,7 +18,7 @@ function App() {
             <Outlet />
           </div>
         </div>
-        <Footer />
+        <Megafooter />
       </div>
     );
   };

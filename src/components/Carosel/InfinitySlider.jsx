@@ -107,7 +107,7 @@ function CardItem(card) {
       <Card
         className="text-center card-item-container"
         style={{
-          width: 300,
+          width: 280,
         }}
         cover={<img alt={card.title} src={card.src} />}
       >
@@ -139,8 +139,8 @@ const InfinitySlider = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
