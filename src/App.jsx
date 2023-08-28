@@ -1,9 +1,9 @@
 import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
 
 import Users from "./pages/Users";
-import Products from "./pages/Products";
+import Appointment from "./pages/Appointment";
 import Home from "./pages/Home";
-import Content from "./pages/Content";
+import Contact from "./pages/Contact";
 import Header from "./components/Header/Header";
 import Megafooter from "./components/Megafooter/Megafooter";
 
@@ -32,16 +32,16 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/products",
-          element: <Products />,
+          path: "/appointment",
+          element: <Appointment />,
         },
         {
           path: "/users",
           element: <Users />,
         },
         {
-          path: "/content",
-          element: <Content />,
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
