@@ -6,6 +6,10 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Header from "./components/Header/Header";
 import Megafooter from "./components/Megafooter/Megafooter";
+import FlipCards from "./components/Flipcards/Flipcards";
+
+//democards
+import Democards from "./components/CardDesigns/Democards";
 
 function App() {
   const Layout = () => {
@@ -42,6 +46,14 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/flip",
+          element: <FlipCards />,
+        },
+        {
+          path: "/democards",
+          element: <Democards />,
         },
       ],
     },
