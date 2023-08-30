@@ -24,7 +24,7 @@ const Responsivecard = () => {
         </div>
       </div>
 
-      <div className="img-two-container  w-[80%]  md:w-[58%] rounded-lg flex flex-col justify-center items-center">
+      <div className="img-two-container  w-[75%]  md:w-[58%] rounded-lg flex flex-col justify-center items-center">
         <div className="bg-white m-4 w-[80%] h-[auto] rounded-md opacity-[0.8] flex flex-col justify-center items-center">
           <h1 className="text-center mt-3 font-sans font-semibold text-2xl">
             TITLE

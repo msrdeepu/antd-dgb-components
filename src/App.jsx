@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header/Header";
 import Megafooter from "./components/Megafooter/Megafooter";
 import FlipCards from "./components/Flipcards/Flipcards";
+import Pricing from "./components/Pricing/Pricing";
 
 //democards
 import Democards from "./components/CardDesigns/Democards";
@@ -54,6 +55,10 @@ function App() {
         {
           path: "/democards",
           element: <Democards />,
+        },
+        {
+          path: "/pricing",
+          element: <Pricing />,
         },
       ],
     },
