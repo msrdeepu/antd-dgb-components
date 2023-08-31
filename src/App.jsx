@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Megafooter from "./components/Megafooter/Megafooter";
 import FlipCards from "./components/Flipcards/Flipcards";
 import Pricing from "./components/Pricing/Pricing";
+import SwipeCards from "./components/CardDesigns/SwipeCards";
 
 //democards
 import Democards from "./components/CardDesigns/Democards";
@@ -59,6 +60,10 @@ function App() {
         {
           path: "/pricing",
           element: <Pricing />,
+        },
+        {
+          path: "/swipe-cards",
+          element: <SwipeCards />,
         },
       ],
     },

@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 import { Typography, Button } from "antd";
 const { Title } = Typography;
 // Import Swiper React components
@@ -16,8 +15,6 @@ import { Pagination } from "swiper/modules";
 //slider images
 const imageOne = "../../../public/assets/img1.png";
 const imageTwo = "../../../public/assets/img2.png";
-const imageThree = "../../../public/assets/img3.png";
-const imageFour = "../../../public/assets/img4.png";
 
 export default function HeroCarosel() {
   return (
